@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сап-сплавы по рекам Хабаровского края и ЕАО</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* Простые отступы */
+        section {
+            margin: 30px 0;
+            padding: 15px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .routes-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .route-card {
+            border: 1px solid #ddd;
+            padding: 12px;
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+        }
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-item {
+            border: 1px solid #eee;
+            padding: 10px;
+            width: calc(25% - 20px);
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 6px 16px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .route-img {
+            background-color: #e9ecef;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 8px;
+        }
+        h1, h2, h3 {
+            margin: 0.5em 0;
+        }
+        a {
+            color: #0066cc;
+        }
+        .badge {
+            font-size: 0.8rem;
+            color: #555;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        @media (max-width: 800px) {
+            .route-card, .feature-item { width: calc(50% - 20px); }
+        }
+        @media (max-width: 500px) {
+            .route-card, .feature-item { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Шапка (простая) -->
+    <div style="background: #2c5a6b; color: white; padding: 12px 0; margin-bottom: 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <strong><a href="/treki" style="color:white; margin:0 8px;">SUP маршруты по Хабаровскому краю и ЕАО</a></strong>
+            <div>
+                <a href="#link" style="color:white; margin:0 8px;">Полезные ссылки</a>
+                <a href="#safe" style="color:white; margin:0 8px;">Безопасность</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Герой / Заголовок -->
+    <section>
+        <h1>Треки для сплавов на сапе по рекам Обор, Сита и Петропавловскому озеру</h1>
+        <p>Некоторые маршруты проходятся при уровне Амура выше 2,5 м. Некоторые части маршрутов могут быть против течения.</p>
+      <p>Река "нелинейная" - есть возможность разнообразить маршрут заходя в различные протоки или выбирать определенную сторону широкого русла. На карте указаны точки (иконки в виде машины), где можно начать или закончить маршрут. Можно скомбинировать свой маршрут из предложенных.</p>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad75ea0e199e8c5b7355b4dc6b4e613525c96ddc29151894ba6fa6bde783c5a10&amp;width=960&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+        <br>
+        <h2>Список треков</h2>
+    
+    <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+            <th>№</th>
+            <th>Участок (Скачать GPX)</th>
+            <th>Расстояние</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><a href="https://disk.yandex.ru/d/wRbevbK0gEm-iA">Новотроицкое - Речной вокзал (вдоль берега)</a></td>
+            <td>30 км</td>
+            <td>Простой, но продолжительный маршрут вдоль южной части Хабаровска.  </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="https://disk.yandex.ru/d/WchuN2iuutMItg">Новотроицкое - Речной вокзал. По протокам</a></td>
+            <td>29 км</td>
+            <td>Маршрут аналогичен предыдущему, но проходит по протокам вдоль Большого Уссурийского острова </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="https://disk.yandex.ru/d/5J4Pg_Y5miB8XA">Протока Перекоп и Чумная - Речной вокзал</a></td>
+            <td>17 км</td>
+            <td>Интересный маршрут по узким протокам внутри Большого уссурийского острова, доступен при уровне воды не менее 300 см.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="https://disk.yandex.ru/d/lGYxiJ6jsEGDoQ">Амуркабель - Речной вокзал</a> </td>
+            <td>9,6  км</td>
+            <td>Простой маршрут, хорошо подходит для утренних сплавов.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="https://disk.yandex.ru/d/YAdrdWNWqTcmRw">Дельфин - Речной вокзал</a></td>
+            <td>6,5 км</td>
+            <td>Самый короткий и простой маршрут, при низком уровне воды можно доплыть до острова Кабельный, на песчаные косы.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="https://disk.yandex.ru/d/xCI3i-OVsGnAuA">Речной вокзал - п-ов Заячий</a></td>
+            <td>12 км</td>
+            <td>Маршрут вдоль северной части города с прохождением под мостом через Амур.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="https://disk.yandex.ru/d/4OaowS51SOnSuQ">Речной вокзал - Малышевская протока - Воронежское-2</a></td>
+            <td>24 км</td>
+            <td>Достаточно длинный маршрут, проходящий мимо пос. Тельмана и устье Тунгуски. В конце придется интенсивно перегребать через Амур.</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="https://disk.yandex.ru/d/OC8hW__HymbALw">Дальдизель - оз. Солдатское - Музей моста</a></td>
+            <td>15 км</td>
+            <td>Маршрут с заходом на озеро Солдатское. При высоком уровне воды (более 400 см) можно из озера выйти в протоку Бешеная</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="https://disk.yandex.ru/d/ZO1z3oLWSl6aLw">Ул. Штормовая - Белый парус</a></td>
+            <td>18 км</td>
+            <td>Маршрут вдоль северной части Хабаровска и Воронежских скал. </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="https://disk.yandex.ru/d/l6tn3EyaLfSrjg">Оз. Кривое (БУО) - Пемзенская протока - п-ов Заячий </a></td>
+            <td>26 км</td>
+            <td>Маршрут начинается с БУО и проходит по Пензенской протоке. Осторожно - в районе остатков дамбы рекомендуется обноска по берегу, возможны водовороты. </td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td><a href="https://disk.yandex.ru/d/6zkUlz5L6gBDJw">оз.Кривое (БУО) - Бешеная протока - ул. Штормовая </a></td>
+            <td>24 км</td>
+            <td>Маршрут с БУО  до ул. Штормовой по Бешеной протоке</td>
+        </tr>
+    </table>
+    
+    <p><strong>Всего участков: 11</strong></p>
+    <p><strong>Общая протяжённость: 211 км</strong></p>
+    
+    </section>
+
+
+    <!-- Преимущества (кратко) -->
+    <section id="features">
+        <h2>Наши принципы</h2>
+        <div class="features-grid">
+            <div class="feature-item">✅ Безопасность: жилеты, страховка, опытные гиды.</div>
+            <div class="feature-item">🗺️ Продуманные маршруты по дальневосточным рекам.</div>
+            <div class="feature-item">🌿 Экологичность: не оставляем следов.</div>
+        </div>
+        <p>Внимание! Маршруты предоставляются в справочных целях. Ответственность за безопасность несут участники сплавов. Сложность маршрута зависит от уровня воды, сезона и скорости ветра. </p>
+    </section>
+
+ 
+</div>
+
+
+</body>
+</html>
